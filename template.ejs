@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>pi_chan</title>
+  </head>
+  <body>
+    <ul>
+        <% for (const post of posts) { %>
+            <li>User: <%= post.user_name %><p><%= post.post_content %></p></li>
+        <% } %>
+    </ul>
+    <form method="post" action="/send">
+        <input name="user_name" />
+        <input name="post_content" />
+        <button>送信</button>
+    </form>
+  </body>
+</html>

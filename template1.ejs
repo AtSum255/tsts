@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    あなたは<%= n %>人目のお客様です。<br>
+    <script>
+        let epoctime = new Date();
+        document.write(`${epoctime.getFullYear()}年${epoctime.getMonth()}月${epoctime.getDate()}日${epoctime.getHours()}:${epoctime.getMinutes()}:${epoctime.getSeconds()}<br>`)
+    </script>
+    <%= now %>
+  </body>
+</html>
