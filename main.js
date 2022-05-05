@@ -34,5 +34,4 @@ app.post("/send", (request, response) => {
     update(response);
 });
 
-app.listen(3000);
-
+app.listen(process.env.PORT || 3000);
